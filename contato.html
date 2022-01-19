@@ -23,18 +23,19 @@
 
       <form>
           <label for="Nome">Nome</label> <br>
-          <input type="text" id="Nome">
-          <br>
+          <input type="text" id="Nome" onkeyup="validaNome()">
+          <div id="txtNome"></div>
           <br>
           <label for="email">E-mail</label> <br>
-          <input type="email" id="email">
-          <br>
-          <br>
+          <input type="email" id="Email" onkeyup="validaEmail()">
+          <div id="txtEmail"></div>
+           <br>
           <label for="assunto">Assunto</label> <br>
-          <textarea name="assunto" id="assunto" cols="60" rows="5" ></textarea>
+          <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()" ></textarea>
+          <div id="txtAssunto"></div>
           <br>
           <br>
-          <button>Enviar</button>
+          <button onclick="enviar()">Enviar</button>
 
       </form>
 
@@ -74,5 +75,7 @@ Todos os Direitos Reservado: Anderson Sousa &copy;
 
 </footer>
       
+<script src="asse/js/script.js"></script>
+
 </body>
 </html>
